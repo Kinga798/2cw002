@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Żarty o informatykach</title>
     <script>
         function f1() {
@@ -40,7 +40,8 @@
             border-left: 500px solid #5fd48e;
             border-right: 500px solid #5fd48e;
             line-height: auto;
-
+            padding: 0px;
+            box-sizing: border-box;
 
 
         }
@@ -50,7 +51,7 @@
             color: #000000;
             padding: 10px;
             font-size: 14px;
-            max-width: 500px;
+            max-width: 100%;
             word-wrap: break-word;
             box-sizing: border-box;
 
@@ -66,12 +67,20 @@
             justify-content: center;
             align-items: center;
             gap: 10px;
+            flex-wrap: wrap;
 
         }
 
         .ble {
             border: 1px solid black;
             padding: 10px;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                border-left: none;
+                border-right: none;
+            }
         }
     </style>
 

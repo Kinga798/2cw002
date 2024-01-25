@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Żarty o informatykach</title>
+    <script>
+        function f1() {
+            document.getElementById("odp1").innerHTML = "Takiego wirusa jeszcze nie miałem!";
+        }
+        function f2(elementId) {
+            var element = document.getElementById(elementId);
+            if (element) {
+                element.innerHTML = ":)";
+            }
+        }
+        function f3() {
+            document.getElementById("odp2").innerHTML = "Potwierdzi to każdy programista.";
+        }
+        function f4() {
+            document.getElementById("odp3").innerHTML = "Poprosze witaminę C++";
+        }
+        function f5() {
+            document.getElementById("odp4").innerHTML = "Wiesza się razem ze swoim programem.";
+        }
+        function f6() {
+            document.getElementById("odp5").innerHTML = "Bo w instrukcji jest napisane: nałożyć, spłukać, czynność powtórzyć.";
+        }
+
+    </script>
+
+    <style>
+        body {
+            background: #c1ffd1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0px;
+            border-left: 500px solid #5fd48e;
+            border-right: 500px solid #5fd48e;
+            line-height: auto;
+
+
+
+        }
+
+        .content {
+            margin: 10px 0;
+            color: #000000;
+            padding: 10px;
+            font-size: 14px;
+            max-width: 500px;
+            word-wrap: break-word;
+            box-sizing: border-box;
+
+        }
+
+        .przycisk {
+            background-color: rgb(123, 246, 139);
+            font-size: 14px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+        }
+
+        .ble {
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>
+        <bold>Zagadki o informatykach</bold>
+    </h1>
+
+    <p>Co mówi informatyk widząc teściową przy swoim komputerze?</p>
+    <div class="container">
+        <button onclick="f1()" class="content przycisk ">Pokaż odpowiedź</button>
+        <button class="content przycisk " onclick="f2('odp1')">Ukryj odpowiedź</button>
+    </div>
+    <div class="content" id="odp1">Tu zostanie wyświetlona odpowiedź</div>
+
+    <br>
+
+    <p>Cuda się zdarzają...</p>
+    <div class="container">
+        <button class="content przycisk" onclick="f3()">Pokaż odpowiedź</button>
+        <button class="content przycisk" onclick="f2('odp2')">Ukryj odpowiedź</button>
+    </div>
+    <div class="content" id="odp2">Tu zostanie wyświetlona odpowiedź</div>
+
+    <br>
+
+    <p>Co mówi informatyk w aptece?</p>
+    <div class="container">
+        <button class="content przycisk" onclick="f4()">Pokaż odpowiedź</button>
+        <button class="content przycisk" onclick="f2('odp3')">Ukryj odpowiedź</button>
+    </div>
+    <div class="content" id="odp3">Tu zostanie wyświetlona odpowiedź</div>
+
+    <br>
+
+    <p>Co robi dobry programista?</p>
+    <div class="container">
+        <button class="content przycisk" onclick="f5()">Pokaż odpowiedź</button>
+        <button class="content przycisk" onclick="f2('odp4')">Ukryj odpowiedź</button>
+    </div>
+    <div class="content" id="odp4">Tu zostanie wyświetlona odpowiedź</div>
+
+    <br>
+
+    <p>Dlaczego programista na umycie głowy zużywa całą butelkę szamponu?
+    </p>
+    <div class="container">
+        <button class="content przycisk" onclick="f6()">Pokaż odpowiedź</button>
+        <button class="content przycisk" onclick="f2('odp5')">Ukryj odpowiedź</button>
+    </div>
+    <div class="content" id="odp5">Tu zostanie wyświetlona odpowiedź</div>
+
+    <div class=" ble">
+        <p class="content">Żarty ze stron:</p>
+        <ul>
+            <li><a class="content"
+                    href="https://www.dowcipy.pl/k/informatyka/">https://www.dowcipy.pl/k/informatyka/</a></li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
